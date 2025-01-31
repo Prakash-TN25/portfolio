@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio | Prakash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <div class="details">
+            <h1>PRAKASH</h1>
+            <p style="margin-right: 20px;">/</p>
+            <p>Gamer</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+               
+            </ul>
+        </nav>
+    
+        </div>
+    </header>
+
+
+    <section id="about">
+        <div class="section-content-about">
+            <div ><img src="harish.jpg" alt="" class="about-img"></div>
+            <div class="about-content">
+            <h2>About Me</h2>
+            <br>
+            <br>
+            <p style="line-height: 25px;letter-spacing:1px">I am a highly motivated and detail-oriented web developer with a strong foundation in modern web technologies. As a fresher, I bring a fresh perspective and a passion for creating efficient, scalable, and user-friendly digital solutions. My focus is on delivering high-quality work that aligns with the latest industry standards and client goals.</p>
+        </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <div class="edu-content">
+            <div  class="box"><div id="msc"> M.sc Computer Science <br><br><br>80%</div></div>
+            <div  class="box"><div id="bsc"> B.sc Computer science <br><br><br>78%</div></div>
+            <div  class="box"><div id="hsc"> HSC <br><br><br>75%
+            </div></div>
+            
+        </div>
+            
+         </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <div class="skils">
+            <ul>
+                <li>Html</li>
+                <li>CSS</li>
+            </ul>
+        </div>
+        </div>
+    </section>
+
+    <section id="projects" >
+        <div class="section-content" style="height: 300px;">
+            <h2>Projects</h2>
+            <div class="project">
+            <ul>
+                <li><a href="#"><img src="portfolio.jpg" alt="" style="width:200px;height:150px;border-radius:10%"></a><p>PORTFOLIO</p></li>
+                <li style="margin-top: 30px;"><a href="#" ><img src="cal.jpg" alt="" style="width:200px;height:150px;border-radius:10%"></a><p>MORDEN CALCULATOR</p></li>
+                <li style="margin-top: 60px;"><a href="#" ><img src="classroom.jpg" alt="" style="width:200px;height:150px;border-radius:10%"></a><P>CLASSROOM MANAGEMENT SYSTEM</P></li>
+                <!-- Add more project links here -->
+            </ul>
+        </div>
+        </div>
+    </section>
+
+    <section id="resume">
+    
+        <div class="section-content">
+            <center>
+            <h2>Resume</h2>
+            <a href="Harish resume .pdf" target="_blank" class="download-button">Download CV</a>
+        </center>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PRAKASH A</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
